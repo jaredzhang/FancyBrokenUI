@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FancyBrokenUI</string>
+
+    <string name="top_sheet_behavior" translatable="false">com.github.techisfun.android.topsheet.TopSheetBehavior</string>
+
+    <string name="transition_thumbnail" translatable="false">transition_thumbnail</string>
+    <string name="transition_title" translatable="false">transition_title</string>
+    <string name="transition_description" translatable="false">transition_description</string>
+</resources>

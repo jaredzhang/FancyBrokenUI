@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+
+
+    <FrameLayout
+        android:id="@+id/top_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/top_sheet_behavior"
+        android:background="#FF0000"
+        app:behavior_peekHeight="200dp"
+        >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/pool"
+            android:scaleType="centerCrop"
+            android:id="@+id/image"
+            />
+
+    </FrameLayout>
+
+    <com.jaredzhang.fancybrokenui.widget.ClipRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="210dp"
+        android:paddingLeft="5dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:id="@+id/rvHome"
+        tools:listitem="@layout/item_home"
+    >
+
+    </com.jaredzhang.fancybrokenui.widget.ClipRecyclerView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
